@@ -1,0 +1,556 @@
+/* =========================
+   SETTINGS PAGE
+========================= */
+
+.profile-page{
+
+  min-height:100vh;
+
+  padding:40px 15px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #0f172a,
+    #111827,
+    #1e293b
+  );
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:flex-start;
+
+  font-family:"Poppins",sans-serif;
+
+}
+
+/* =========================
+   CARD
+========================= */
+
+.profile-card{
+
+  width:100%;
+
+  max-width:1100px;
+
+  background:
+  rgba(10,18,40,0.96);
+
+  border-radius:32px;
+
+  padding:40px;
+
+  border:1px solid
+  rgba(255,255,255,0.08);
+
+  box-shadow:
+  0 20px 60px rgba(0,0,0,0.45);
+
+  overflow:hidden;
+
+}
+
+/* =========================
+   PROFILE TOP
+========================= */
+
+.profile-top{
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+
+  justify-content:center;
+
+  text-align:center;
+
+  margin-bottom:50px;
+
+}
+
+/* =========================
+   PROFILE RING
+========================= */
+
+.profile-ring{
+
+  width:190px;
+
+  height:190px;
+
+  padding:5px;
+
+  border-radius:50%;
+
+  position:relative;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  margin-bottom:28px;
+
+}
+
+/* =========================
+   ANIMATED BORDER
+========================= */
+
+.profile-ring::before{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  border-radius:50%;
+
+  background:
+  linear-gradient(
+    135deg,
+    #8b5cf6,
+    #ec4899,
+    #3b82f6,
+    #06b6d4,
+    #8b5cf6
+  );
+
+  background-size:300% 300%;
+
+  animation:
+  borderMove 5s linear infinite;
+
+  z-index:0;
+
+}
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.profile-image{
+
+  width:100%;
+
+  height:100%;
+
+  object-fit:cover;
+
+  border-radius:50%;
+
+  border:6px solid #0f172a;
+
+  background:white;
+
+  position:relative;
+
+  z-index:1;
+
+}
+
+/* =========================
+   NAME
+========================= */
+
+.profile-top h2{
+
+  color:white;
+
+  font-size:34px;
+
+  font-weight:700;
+
+  margin-bottom:10px;
+
+  text-transform:uppercase;
+
+  letter-spacing:1px;
+
+}
+
+/* =========================
+   SUBTITLE
+========================= */
+
+.profile-top p{
+
+  color:#cbd5e1;
+
+  font-size:16px;
+
+  margin-bottom:20px;
+
+}
+
+/* =========================
+   UPLOAD BUTTON
+========================= */
+
+.upload-btn{
+
+  padding:13px 26px;
+
+  border-radius:14px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #2563eb,
+    #06b6d4
+  );
+
+  color:white;
+
+  font-size:15px;
+
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:0.3s ease;
+
+  box-shadow:
+  0 10px 25px rgba(37,99,235,0.25);
+
+}
+
+.upload-btn:hover{
+
+  transform:translateY(-3px);
+
+}
+
+/* =========================
+   FORM
+========================= */
+
+.settings-form{
+
+  width:100%;
+
+}
+
+/* =========================
+   GRID
+========================= */
+
+.form-grid{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(260px,1fr));
+
+  gap:22px;
+
+  margin-bottom:25px;
+
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+.settings-form input,
+.settings-form textarea{
+
+  width:100%;
+
+  padding:16px 18px;
+
+  border:none;
+
+  outline:none;
+
+  border-radius:18px;
+
+  background:
+  rgba(15,23,42,0.95);
+
+  border:1px solid
+  rgba(255,255,255,0.08);
+
+  color:white;
+
+  font-size:15px;
+
+  transition:0.3s ease;
+
+}
+
+/* =========================
+   TEXTAREA
+========================= */
+
+.settings-form textarea{
+
+  min-height:140px;
+
+  resize:none;
+
+  margin-bottom:25px;
+
+}
+
+/* =========================
+   PLACEHOLDER
+========================= */
+
+.settings-form input::placeholder,
+.settings-form textarea::placeholder{
+
+  color:#94a3b8;
+
+}
+
+/* =========================
+   INPUT FOCUS
+========================= */
+
+.settings-form input:focus,
+.settings-form textarea:focus{
+
+  border:1px solid #3b82f6;
+
+  box-shadow:
+  0 0 15px rgba(59,130,246,0.25);
+
+}
+
+/* =========================
+   SAVE BUTTON
+========================= */
+
+.settings-form button{
+
+  width:100%;
+
+  padding:16px;
+
+  border:none;
+
+  border-radius:18px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #2563eb,
+    #06b6d4
+  );
+
+  color:white;
+
+  font-size:16px;
+
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:0.3s ease;
+
+  box-shadow:
+  0 10px 25px rgba(37,99,235,0.25);
+
+}
+
+.settings-form button:hover{
+
+  transform:translateY(-3px);
+
+}
+
+/* =========================
+   CROP MODAL
+========================= */
+
+.crop-modal{
+
+  position:fixed;
+
+  inset:0;
+
+  background:
+  rgba(0,0,0,0.8);
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  z-index:999;
+
+}
+
+/* =========================
+   CROP CONTAINER
+========================= */
+
+.crop-container{
+
+  position:relative;
+
+  width:340px;
+
+  height:340px;
+
+  background:#111827;
+
+  border-radius:24px;
+
+  overflow:hidden;
+
+  border:2px solid
+  rgba(255,255,255,0.08);
+
+}
+
+/* =========================
+   CROP ACTIONS
+========================= */
+
+.crop-actions{
+
+  position:absolute;
+
+  bottom:40px;
+
+  display:flex;
+
+  gap:15px;
+
+}
+
+.crop-actions button{
+
+  padding:12px 28px;
+
+  border:none;
+
+  border-radius:14px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #2563eb,
+    #06b6d4
+  );
+
+  color:white;
+
+  font-size:15px;
+
+  font-weight:600;
+
+  cursor:pointer;
+
+}
+
+/* =========================
+   BORDER ANIMATION
+========================= */
+
+@keyframes borderMove{
+
+  0%{
+
+    background-position:0% 50%;
+
+  }
+
+  50%{
+
+    background-position:100% 50%;
+
+  }
+
+  100%{
+
+    background-position:0% 50%;
+
+  }
+
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+  .profile-card{
+
+    padding:28px 20px;
+
+  }
+
+  .profile-ring{
+
+    width:150px;
+
+    height:150px;
+
+  }
+
+  .profile-top h2{
+
+    font-size:28px;
+
+  }
+
+  .form-grid{
+
+    grid-template-columns:1fr;
+
+  }
+
+}
+
+@media(max-width:480px){
+
+  .profile-page{
+
+    padding:20px 10px;
+
+  }
+
+  .profile-card{
+
+    padding:22px 15px;
+
+    border-radius:24px;
+
+  }
+
+  .profile-ring{
+
+    width:130px;
+
+    height:130px;
+
+  }
+
+  .profile-top h2{
+
+    font-size:24px;
+
+  }
+
+  .settings-form input,
+  .settings-form textarea{
+
+    padding:14px 15px;
+
+    font-size:14px;
+
+  }
+
+}

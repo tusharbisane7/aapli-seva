@@ -1,0 +1,122 @@
+/* =============================================
+   QUICK TRANSPORT SECTION
+   ============================================= */
+
+.quick-transport {
+  padding: 100px 0;
+  background: #f8fafc;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* HEADER */
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header span {
+  display: inline-block;
+  background: #3b82f6;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.section-header h2 {
+  font-size: 2.8rem;
+  color: #1e2937;
+  margin: 0 0 16px 0;
+  font-weight: 700;
+}
+
+.section-header p {
+  font-size: 1.2rem;
+  color: #64748b;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* TRANSPORT GRID */
+.transport-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 24px;
+}
+
+/* TRANSPORT CARD */
+.transport-card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.transport-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15);
+  border-color: #3b82f6;
+}
+
+.transport-icon {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  color: #3b82f6;
+  transition: all 0.3s;
+}
+
+.transport-card:hover .transport-icon {
+  transform: scale(1.12);
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+}
+
+.transport-card h3 {
+  font-size: 1.25rem;
+  color: #1e2937;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .quick-transport {
+    padding: 70px 0;
+  }
+
+  .section-header h2 {
+    font-size: 2.4rem;
+  }
+
+  .transport-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+  }
+
+  .transport-card {
+    padding: 30px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .transport-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+}

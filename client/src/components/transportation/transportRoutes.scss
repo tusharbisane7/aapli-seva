@@ -1,0 +1,309 @@
+.popular-routes{
+  padding:80px 0;
+  background:#f5f7fb;
+
+  .container{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+  }
+
+  /* =========================
+     HEADER
+  ========================= */
+
+  .section-header{
+    text-align:center;
+    margin-bottom:50px;
+
+    span{
+      display:inline-block;
+      background:#e8f1ff;
+      color:#0d6efd;
+      padding:10px 18px;
+      border-radius:30px;
+      font-size:14px;
+      font-weight:600;
+      margin-bottom:15px;
+    }
+
+    h2{
+      font-size:42px;
+      font-weight:800;
+      color:#111827;
+      margin-bottom:15px;
+    }
+
+    p{
+      max-width:700px;
+      margin:auto;
+      color:#6b7280;
+      font-size:17px;
+      line-height:1.7;
+    }
+  }
+
+  /* =========================
+     LOADING
+  ========================= */
+
+  .loading-box,
+  .no-route{
+    text-align:center;
+    padding:40px 0;
+
+    h3{
+      color:#6b7280;
+      font-size:20px;
+      font-weight:600;
+    }
+  }
+
+  /* =========================
+     GRID
+  ========================= */
+
+  .route-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+    gap:28px;
+  }
+
+  /* =========================
+     CARD
+  ========================= */
+
+  .route-card{
+    background:#fff;
+    border-radius:24px;
+    padding:28px;
+    box-shadow:0 10px 35px rgba(0,0,0,0.08);
+    transition:0.3s ease;
+    border:1px solid #edf0f7;
+
+    &:hover{
+      transform:translateY(-8px);
+      box-shadow:0 18px 45px rgba(0,0,0,0.12);
+    }
+
+    /* =========================
+       TOP
+    ========================= */
+
+    .route-top{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      margin-bottom:25px;
+
+      .route-icon{
+        width:65px;
+        height:65px;
+        border-radius:18px;
+        background:linear-gradient(
+          135deg,
+          #0d6efd,
+          #2563eb
+        );
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        color:#fff;
+        font-size:28px;
+      }
+
+      .ontime,
+      .delay{
+        padding:8px 15px;
+        border-radius:30px;
+        font-size:13px;
+        font-weight:700;
+      }
+
+      .ontime{
+        background:#dcfce7;
+        color:#15803d;
+      }
+
+      .delay{
+        background:#fee2e2;
+        color:#dc2626;
+      }
+    }
+
+    /* =========================
+       TITLE
+    ========================= */
+
+    h3{
+      font-size:24px;
+      font-weight:800;
+      color:#111827;
+      margin-bottom:20px;
+    }
+
+    /* =========================
+       ROUTE
+    ========================= */
+
+    .route-path{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      color:#374151;
+      font-size:16px;
+      font-weight:600;
+      margin-bottom:22px;
+
+      svg{
+        color:#0d6efd;
+      }
+    }
+
+    /* =========================
+       INFO
+    ========================= */
+
+    .route-info{
+      display:flex;
+      justify-content:space-between;
+      gap:15px;
+      margin-bottom:25px;
+
+      div{
+        flex:1;
+        background:#f9fafb;
+        border-radius:16px;
+        padding:15px;
+        display:flex;
+        align-items:center;
+        gap:10px;
+        border:1px solid #edf2f7;
+
+        svg{
+          color:#2563eb;
+          font-size:18px;
+        }
+
+        span{
+          color:#374151;
+          font-weight:600;
+          font-size:14px;
+        }
+      }
+    }
+
+    /* =========================
+       PRICE
+    ========================= */
+
+    .route-price{
+      background:linear-gradient(
+        135deg,
+        #eff6ff,
+        #dbeafe
+      );
+      border-radius:18px;
+      padding:18px;
+      margin-bottom:25px;
+      text-align:center;
+
+      span{
+        display:block;
+        color:#6b7280;
+        font-size:14px;
+        margin-bottom:8px;
+      }
+
+      h4{
+        font-size:30px;
+        color:#0d6efd;
+        font-weight:800;
+      }
+    }
+
+    /* =========================
+       BUTTONS
+    ========================= */
+
+    .route-buttons{
+      display:flex;
+      gap:15px;
+
+      button{
+        flex:1;
+        border:none;
+        border-radius:14px;
+        padding:14px 16px;
+        font-size:15px;
+        font-weight:700;
+        cursor:pointer;
+        transition:0.3s ease;
+      }
+
+      .details-btn{
+        background:#eef2ff;
+        color:#1e3a8a;
+
+        &:hover{
+          background:#dbeafe;
+        }
+      }
+
+      .book-btn{
+        background:linear-gradient(
+          135deg,
+          #0d6efd,
+          #2563eb
+        );
+        color:#fff;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:10px;
+
+        &:hover{
+          transform:translateY(-2px);
+          box-shadow:0 10px 25px rgba(37,99,235,0.35);
+        }
+      }
+    }
+  }
+
+  /* =========================
+     MOBILE
+  ========================= */
+
+  @media(max-width:768px){
+
+    padding:60px 0;
+
+    .section-header{
+
+      h2{
+        font-size:32px;
+      }
+
+      p{
+        font-size:15px;
+      }
+    }
+
+    .route-card{
+      padding:22px;
+
+      h3{
+        font-size:21px;
+      }
+
+      .route-buttons{
+        flex-direction:column;
+      }
+
+      .route-info{
+        flex-direction:column;
+      }
+    }
+  }
+}

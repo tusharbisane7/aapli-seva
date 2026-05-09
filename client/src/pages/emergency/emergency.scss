@@ -1,0 +1,418 @@
+.emergency-page{
+  background:#f4f7fb;
+  min-height:100vh;
+  overflow:hidden;
+}
+
+/* HERO */
+
+.emergency-hero{
+  height:420px;
+
+  background:
+  linear-gradient(
+    rgba(0,0,0,0.45),
+    rgba(0,0,0,0.45)
+  ),
+  url("https://images.unsplash.com/photo-1584515933487-779824d29309");
+
+  background-size:cover;
+  background-position:center;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  position:relative;
+}
+
+.emergency-hero::before{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:100%;
+  backdrop-filter:blur(2px);
+}
+
+.overlay{
+  position:relative;
+  z-index:2;
+  text-align:center;
+  color:white;
+  padding:20px;
+
+  animation:fadeUp 1s ease;
+}
+
+.hero-badge{
+  display:inline-block;
+
+  padding:10px 22px;
+
+  background:
+  rgba(255,255,255,0.15);
+
+  border:
+  1px solid rgba(255,255,255,0.3);
+
+  backdrop-filter:blur(10px);
+
+  border-radius:50px;
+
+  font-size:15px;
+  font-weight:600;
+
+  margin-bottom:22px;
+
+  letter-spacing:0.5px;
+}
+
+.overlay h1{
+  font-size:62px;
+  font-weight:800;
+  margin-bottom:20px;
+  line-height:1.1;
+}
+
+.overlay p{
+  max-width:760px;
+  margin:auto;
+  font-size:20px;
+  line-height:1.9;
+  opacity:0.95;
+}
+
+/* MAIN */
+
+.emergency-container{
+  max-width:1450px;
+  margin:auto;
+  padding:80px 25px;
+}
+
+.emergency-section h2{
+  text-align:center;
+  font-size:42px;
+  font-weight:800;
+  color:#0f172a;
+  margin-bottom:70px;
+}
+
+/* CATEGORY */
+
+.emergency-category{
+  margin-bottom:70px;
+}
+
+.category-header{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  margin-bottom:35px;
+}
+
+.category-icon{
+  width:70px;
+  height:70px;
+
+  border-radius:22px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:28px;
+  color:white;
+
+  box-shadow:
+  0 10px 25px rgba(0,0,0,0.12);
+
+  animation:pulse 3s infinite;
+}
+
+.emergency-category h3{
+  font-size:32px;
+  color:#0f172a;
+  font-weight:800;
+}
+
+/* CATEGORY COLORS */
+
+.ambulance .category-icon{
+  background:linear-gradient(
+    135deg,
+    #ef4444,
+    #dc2626
+  );
+}
+
+.hospital .category-icon{
+  background:linear-gradient(
+    135deg,
+    #0ea5e9,
+    #0284c7
+  );
+}
+
+.blood .category-icon{
+  background:linear-gradient(
+    135deg,
+    #dc2626,
+    #991b1b
+  );
+}
+
+.police .category-icon{
+  background:linear-gradient(
+    135deg,
+    #2563eb,
+    #1d4ed8
+  );
+}
+
+.women .category-icon{
+  background:linear-gradient(
+    135deg,
+    #ec4899,
+    #db2777
+  );
+}
+
+.office .category-icon{
+  background:linear-gradient(
+    135deg,
+    #14b8a6,
+    #0f766e
+  );
+}
+
+/* GRID */
+
+.emergency-grid{
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(290px,1fr));
+
+  gap:30px;
+}
+
+/* CARD */
+
+.emergency-card{
+  position:relative;
+  overflow:hidden;
+
+  background:
+  rgba(255,255,255,0.72);
+
+  border:
+  1px solid rgba(255,255,255,0.6);
+
+  backdrop-filter:blur(16px);
+
+  border-radius:28px;
+
+  padding:35px 28px;
+
+  box-shadow:
+  0 12px 35px rgba(0,0,0,0.08);
+
+  transition:0.45s ease;
+
+  animation:cardFade 0.7s ease;
+}
+
+.card-glow{
+  position:absolute;
+  top:-60px;
+  right:-60px;
+
+  width:150px;
+  height:150px;
+
+  border-radius:50%;
+
+  background:
+  rgba(255,255,255,0.35);
+
+  filter:blur(20px);
+}
+
+.emergency-card:hover{
+  transform:
+  translateY(-10px)
+  scale(1.02);
+
+  box-shadow:
+  0 20px 45px rgba(0,0,0,0.14);
+}
+
+/* TEXT */
+
+.emergency-card h4{
+  font-size:24px;
+  color:#0f172a;
+  margin-bottom:18px;
+  font-weight:700;
+  line-height:1.5;
+}
+
+.emergency-card p{
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  color:#475569;
+  font-size:16px;
+  margin-bottom:18px;
+  line-height:1.7;
+}
+
+/* BUTTON */
+
+.call-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+
+  padding:13px 24px;
+
+  border-radius:50px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #2563eb,
+    #1d4ed8
+  );
+
+  color:white;
+  text-decoration:none;
+
+  font-weight:700;
+
+  transition:0.35s ease;
+}
+
+.call-btn:hover{
+  transform:scale(1.06);
+
+  box-shadow:
+  0 12px 25px rgba(37,99,235,0.35);
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeUp{
+
+  from{
+    opacity:0;
+    transform:translateY(40px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+}
+
+@keyframes cardFade{
+
+  from{
+    opacity:0;
+    transform:translateY(25px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+}
+
+@keyframes pulse{
+
+  0%{
+    transform:scale(1);
+  }
+
+  50%{
+    transform:scale(1.06);
+  }
+
+  100%{
+    transform:scale(1);
+  }
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+  .overlay h1{
+    font-size:48px;
+  }
+
+  .overlay p{
+    font-size:18px;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .emergency-hero{
+    height:340px;
+  }
+
+  .overlay h1{
+    font-size:38px;
+  }
+
+  .overlay p{
+    font-size:16px;
+    line-height:1.7;
+  }
+
+  .emergency-section h2{
+    font-size:34px;
+  }
+
+  .emergency-category h3{
+    font-size:26px;
+  }
+
+  .category-icon{
+    width:60px;
+    height:60px;
+    font-size:24px;
+  }
+
+}
+
+@media(max-width:500px){
+
+  .emergency-container{
+    padding:60px 15px;
+  }
+
+  .overlay h1{
+    font-size:30px;
+  }
+
+  .overlay p{
+    font-size:15px;
+  }
+
+  .emergency-card{
+    padding:28px 22px;
+  }
+
+  .emergency-card h4{
+    font-size:21px;
+  }
+
+}

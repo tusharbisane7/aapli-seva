@@ -1,0 +1,254 @@
+/* =============================================
+   PRIVATE TRANSPORT SECTION
+   ============================================= */
+
+.private-transport {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* HEADER */
+.section-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.section-header span {
+  display: inline-block;
+  background: #7c3aed;
+  color: white;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.section-header h2 {
+  font-size: 2.8rem;
+  color: #1e2937;
+  margin: 0 0 16px 0;
+  font-weight: 700;
+}
+
+.section-header p {
+  font-size: 1.22rem;
+  color: #64748b;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+/* PRIVATE GRID */
+.private-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 28px;
+}
+
+/* PRIVATE CARD */
+.private-card {
+  background: white;
+  border-radius: 22px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.private-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 25px 50px rgba(124, 58, 237, 0.15);
+  border-color: #a78bfa;
+}
+
+/* CARD TOP */
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.private-icon {
+  width: 72px;
+  height: 72px;
+  background: linear-gradient(135deg, #f3e8ff, #e0e7ff);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.6rem;
+  color: #7c3aed;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #fefce8;
+  color: #ca8a04;
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* CONTENT */
+.private-card h3 {
+  font-size: 1.5rem;
+  margin: 0 0 6px 0;
+  color: #1e2937;
+}
+
+.type {
+  color: #7c3aed;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.operator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #16a34a;
+  margin-bottom: 18px;
+}
+
+/* ROUTE */
+.route {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+  color: #334155;
+  margin-bottom: 16px;
+
+  svg {
+    color: #7c3aed;
+  }
+}
+
+/* ROUTE INFO */
+.route-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 16px 0;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.route-info > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #475569;
+}
+
+.route-info svg {
+  color: #7c3aed;
+}
+
+/* EXTRA DETAILS */
+.extra-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.extra-details > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* PRICE BOX */
+.price-box {
+  text-align: center;
+  margin: 20px 0;
+  padding: 16px;
+  background: #f8fafc;
+  border-radius: 16px;
+}
+
+.price-box span {
+  font-size: 0.95rem;
+  color: #64748b;
+}
+
+.price-box h4 {
+  margin: 6px 0 0 0;
+  font-size: 1.8rem;
+  color: #1e40af;
+  font-weight: 700;
+}
+
+/* BUTTONS */
+.private-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.details-btn,
+.explore-btn {
+  flex: 1;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.details-btn {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.explore-btn {
+  background: #7c3aed;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.details-btn:hover {
+  background: #e2e8f0;
+}
+
+.explore-btn:hover {
+  background: #6d28d9;
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .private-transport {
+    padding: 70px 0;
+  }
+
+  .section-header h2 {
+    font-size: 2.4rem;
+  }
+
+  .private-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .private-card {
+    padding: 22px;
+  }
+}

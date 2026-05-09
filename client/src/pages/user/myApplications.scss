@@ -1,0 +1,82 @@
+.myapps-page{
+
+  min-height:100vh;
+
+  padding:120px 20px;
+
+  background:#0f172a;
+
+  font-family:"Poppins",sans-serif;
+
+}
+
+.myapps-title{
+
+  color:white;
+
+  font-size:32px;
+
+  text-align:center;
+
+  margin-bottom:35px;
+
+}
+
+.application-grid{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(320px,1fr));
+
+  gap:25px;
+
+}
+
+.application-card{
+
+  background:#111827;
+
+  border-radius:22px;
+
+  padding:25px;
+
+  border:1px solid rgba(255,255,255,0.08);
+
+}
+
+.application-card h2{
+
+  color:white;
+
+  font-size:22px;
+
+  margin-bottom:14px;
+
+}
+
+.application-card p{
+
+  color:#cbd5e1;
+
+  margin-bottom:10px;
+
+}
+
+.status{
+
+  display:inline-block;
+
+  padding:8px 16px;
+
+  border-radius:30px;
+
+  background:rgba(37,99,235,0.2);
+
+  color:#60a5fa;
+
+  font-size:14px;
+
+  margin-top:10px;
+
+}

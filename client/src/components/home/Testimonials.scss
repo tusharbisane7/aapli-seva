@@ -1,0 +1,852 @@
+.testimonials-section{
+
+  width:100%;
+
+  padding:120px 0;
+
+  position:relative;
+
+  overflow:hidden;
+
+  background:
+  linear-gradient(
+    180deg,
+    #f8fbff 0%,
+    #eef5ff 100%
+  );
+
+  font-family:"Poppins",sans-serif;
+
+}
+
+/* =========================
+   PREMIUM GLOW
+========================= */
+
+.testimonials-section::before{
+
+  content:"";
+
+  position:absolute;
+
+  top:-150px;
+
+  left:-120px;
+
+  width:360px;
+
+  height:360px;
+
+  border-radius:50%;
+
+  background:
+  rgba(37,99,235,0.16);
+
+  filter:blur(120px);
+
+}
+
+.testimonials-section::after{
+
+  content:"";
+
+  position:absolute;
+
+  bottom:-150px;
+
+  right:-120px;
+
+  width:360px;
+
+  height:360px;
+
+  border-radius:50%;
+
+  background:
+  rgba(6,182,212,0.16);
+
+  filter:blur(120px);
+
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.testimonials-section .container{
+
+  width:90%;
+
+  max-width:1250px;
+
+  margin:auto;
+
+  position:relative;
+
+  z-index:2;
+
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.section-header{
+
+  text-align:center;
+
+  margin-bottom:70px;
+
+}
+
+.section-header span{
+
+  display:inline-flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  padding:12px 24px;
+
+  border-radius:50px;
+
+  background:
+  rgba(255,255,255,0.7);
+
+  backdrop-filter:blur(14px);
+
+  border:
+  1px solid rgba(255,255,255,0.8);
+
+  color:#2563eb;
+
+  font-size:14px;
+
+  font-weight:600;
+
+  margin-bottom:22px;
+
+  box-shadow:
+  0 10px 25px rgba(37,99,235,0.08);
+
+}
+
+.section-header h2{
+
+  font-size:58px;
+
+  color:#0f172a;
+
+  font-weight:800;
+
+  margin-bottom:18px;
+
+  line-height:1.1;
+
+  letter-spacing:-1px;
+
+}
+
+.section-header p{
+
+  max-width:720px;
+
+  margin:auto;
+
+  color:#64748b;
+
+  font-size:18px;
+
+  line-height:1.9;
+
+}
+
+/* =========================
+   REVIEW FORM
+========================= */
+
+.review-form{
+
+  width:100%;
+
+  max-width:850px;
+
+  margin:0 auto 60px;
+
+  padding:38px;
+
+  border-radius:34px;
+
+  background:
+  rgba(255,255,255,0.58);
+
+  backdrop-filter:blur(18px);
+
+  border:
+  1px solid rgba(255,255,255,0.8);
+
+  box-shadow:
+  0 20px 45px rgba(15,23,42,0.08);
+
+  position:relative;
+
+  overflow:hidden;
+
+}
+
+.review-form::before{
+
+  content:"";
+
+  position:absolute;
+
+  top:-100%;
+
+  left:-50%;
+
+  width:80%;
+
+  height:250%;
+
+  background:
+  linear-gradient(
+    to right,
+    rgba(255,255,255,0),
+    rgba(255,255,255,0.45),
+    rgba(255,255,255,0)
+  );
+
+  transform:rotate(25deg);
+
+  transition:0.8s;
+
+}
+
+.review-form:hover::before{
+
+  left:140%;
+
+}
+
+.review-form textarea{
+
+  width:100%;
+
+  height:130px;
+
+  border:none;
+
+  outline:none;
+
+  resize:none;
+
+  padding:20px;
+
+  border-radius:22px;
+
+  background:
+  rgba(255,255,255,0.8);
+
+  border:
+  1px solid rgba(255,255,255,0.9);
+
+  color:#0f172a;
+
+  font-size:15px;
+
+  line-height:1.8;
+
+  margin-bottom:24px;
+
+  position:relative;
+
+  z-index:2;
+
+}
+
+.review-form textarea::placeholder{
+
+  color:#64748b;
+
+}
+
+/* =========================
+   STAR RATING
+========================= */
+
+.rating-stars{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:10px;
+
+  margin-bottom:24px;
+
+  position:relative;
+
+  z-index:2;
+
+}
+
+.star-btn{
+
+  width:52px;
+
+  height:52px;
+
+  border:none;
+
+  border-radius:16px;
+
+  background:
+  rgba(255,255,255,0.72);
+
+  backdrop-filter:blur(10px);
+
+  border:
+  1px solid rgba(255,255,255,0.85);
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  cursor:pointer;
+
+  transition:0.35s ease;
+
+  color:#cbd5e1;
+
+  box-shadow:
+  0 8px 20px rgba(15,23,42,0.06);
+
+}
+
+.star-btn svg{
+
+  font-size:24px;
+
+}
+
+.star-btn:hover{
+
+  transform:
+  translateY(-3px)
+  scale(1.05);
+
+}
+
+.star-btn.active-star{
+
+  background:
+  linear-gradient(
+    135deg,
+    #facc15,
+    #f59e0b
+  );
+
+  color:white;
+
+  box-shadow:
+  0 10px 24px rgba(250,204,21,0.35);
+
+}
+
+/* =========================
+   ANONYMOUS BOX
+========================= */
+
+.anonymous-box{
+
+  width:max-content;
+
+  display:flex;
+
+  align-items:center;
+
+  gap:12px;
+
+  padding:12px 18px;
+
+  border-radius:16px;
+
+  background:
+  rgba(255,255,255,0.72);
+
+  border:
+  1px solid rgba(255,255,255,0.85);
+
+  backdrop-filter:blur(10px);
+
+  margin-bottom:28px;
+
+  position:relative;
+
+  z-index:2;
+
+}
+
+.anonymous-box input{
+
+  width:18px;
+
+  height:18px;
+
+  accent-color:#2563eb;
+
+  cursor:pointer;
+
+}
+
+.anonymous-box span{
+
+  font-size:14px;
+
+  font-weight:600;
+
+  color:#334155;
+
+}
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+
+.submit-review-btn{
+
+  border:none;
+
+  padding:16px 30px;
+
+  border-radius:18px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #2563eb,
+    #06b6d4
+  );
+
+  color:white;
+
+  font-size:15px;
+
+  font-weight:600;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  gap:10px;
+
+  cursor:pointer;
+
+  transition:0.35s ease;
+
+  box-shadow:
+  0 12px 28px rgba(37,99,235,0.25);
+
+  position:relative;
+
+  z-index:2;
+
+}
+
+.submit-review-btn:hover{
+
+  transform:
+  translateY(-3px);
+
+  box-shadow:
+  0 16px 34px rgba(37,99,235,0.32);
+
+}
+
+/* =========================
+   TESTIMONIAL CARD
+========================= */
+
+.testimonial-slider{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+}
+
+.testimonial-card{
+
+  position:relative;
+
+  width:100%;
+
+  max-width:860px;
+
+  padding:55px;
+
+  overflow:hidden;
+
+  border-radius:36px;
+
+  background:
+  rgba(255,255,255,0.58);
+
+  backdrop-filter:blur(18px);
+
+  border:
+  1px solid rgba(255,255,255,0.8);
+
+  box-shadow:
+  0 20px 55px rgba(15,23,42,0.08);
+
+  animation:fadeSlide 0.5s ease;
+
+}
+
+.testimonial-card::before{
+
+  content:"";
+
+  position:absolute;
+
+  top:-120%;
+
+  left:-40%;
+
+  width:80%;
+
+  height:250%;
+
+  background:
+  linear-gradient(
+    to right,
+    rgba(255,255,255,0),
+    rgba(255,255,255,0.45),
+    rgba(255,255,255,0)
+  );
+
+  transform:rotate(25deg);
+
+  transition:0.8s;
+
+}
+
+.testimonial-card:hover::before{
+
+  left:140%;
+
+}
+
+@keyframes fadeSlide{
+
+  from{
+
+    opacity:0;
+
+    transform:
+    translateY(20px);
+
+  }
+
+  to{
+
+    opacity:1;
+
+    transform:
+    translateY(0);
+
+  }
+
+}
+
+/* =========================
+   QUOTE ICON
+========================= */
+
+.quote-icon{
+
+  width:76px;
+
+  height:76px;
+
+  border-radius:24px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  background:
+  linear-gradient(
+    135deg,
+    #2563eb,
+    #06b6d4
+  );
+
+  color:white;
+
+  font-size:30px;
+
+  margin-bottom:30px;
+
+  box-shadow:
+  0 14px 30px rgba(37,99,235,0.25);
+
+}
+
+/* =========================
+   USER INFO
+========================= */
+
+.user-info{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:18px;
+
+  margin-bottom:24px;
+
+}
+
+.user-info img{
+
+  width:84px;
+
+  height:84px;
+
+  border-radius:50%;
+
+  object-fit:cover;
+
+  border:4px solid rgba(255,255,255,0.9);
+
+  box-shadow:
+  0 10px 24px rgba(37,99,235,0.18);
+
+}
+
+.user-info h3{
+
+  font-size:24px;
+
+  color:#0f172a;
+
+  margin-bottom:5px;
+
+  font-weight:700;
+
+}
+
+.user-info p{
+
+  color:#64748b;
+
+  font-size:15px;
+
+}
+
+/* =========================
+   REVIEW STARS
+========================= */
+
+.stars{
+
+  display:flex;
+
+  gap:6px;
+
+  color:#facc15;
+
+  font-size:20px;
+
+  margin-bottom:25px;
+
+}
+
+/* =========================
+   REVIEW TEXT
+========================= */
+
+.review{
+
+  color:#475569;
+
+  font-size:18px;
+
+  line-height:2;
+
+}
+
+/* =========================
+   DOTS
+========================= */
+
+.slider-dots{
+
+  margin-top:42px;
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:12px;
+
+}
+
+.dot{
+
+  width:14px;
+
+  height:14px;
+
+  border-radius:50%;
+
+  background:#cbd5e1;
+
+  cursor:pointer;
+
+  transition:0.35s;
+
+}
+
+.active-dot{
+
+  width:42px;
+
+  border-radius:50px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #2563eb,
+    #06b6d4
+  );
+
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+  .testimonials-section{
+
+    padding:90px 0;
+
+  }
+
+  .testimonials-section .container{
+
+    width:94%;
+
+  }
+
+  .section-header h2{
+
+    font-size:40px;
+
+  }
+
+  .section-header p{
+
+    font-size:15px;
+
+  }
+
+  .review-form{
+
+    padding:26px;
+
+    border-radius:24px;
+
+  }
+
+  .testimonial-card{
+
+    padding:34px 26px;
+
+    border-radius:28px;
+
+  }
+
+  .review{
+
+    font-size:15px;
+
+    line-height:1.9;
+
+  }
+
+}
+
+@media(max-width:480px){
+
+  .section-header h2{
+
+    font-size:30px;
+
+  }
+
+  .testimonial-card{
+
+    padding:24px 20px;
+
+  }
+
+  .user-info{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+  }
+
+  .user-info img{
+
+    width:72px;
+
+    height:72px;
+
+  }
+
+  .review{
+
+    font-size:14px;
+
+  }
+
+  .review-form textarea{
+
+    height:110px;
+
+    font-size:14px;
+
+  }
+
+  .star-btn{
+
+    width:46px;
+
+    height:46px;
+
+  }
+
+  .star-btn svg{
+
+    font-size:20px;
+
+  }
+
+}
