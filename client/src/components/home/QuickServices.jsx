@@ -1,4 +1,4 @@
-import "./quickServices.scss";
+import "./QuickServices.scss";
 
 import {
   FaFileAlt,

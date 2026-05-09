@@ -1,4 +1,4 @@
-import "./tourism.scss";
+import "./Tourism.scss";
 
 import Navbar from "../../components/navbar/Navbar";
 

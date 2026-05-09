@@ -1,4 +1,4 @@
-import "./newsTicker.scss";
+import "./NewsTicker.scss";
 
 import {
   useEffect,
