@@ -1,6 +1,6 @@
 // FILE: src/pages/transportation/TransportBooking.jsx
 
-import "./transportBooking.scss";
+import "./myTransportBookings.scss";
 
 import { useEffect, useState } from "react";
 
