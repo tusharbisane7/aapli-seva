@@ -1,4 +1,4 @@
-import "./seatLayout.scss";
+import "./SeatLayout.scss";
 
 function SeatLayout({
 

@@ -1,4 +1,4 @@
-import "./exploreCity.scss";
+import "./ExploreCity.scss";
 
 import {
   useEffect,

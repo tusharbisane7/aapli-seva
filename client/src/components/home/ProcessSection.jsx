@@ -1,4 +1,4 @@
-import "./processSection.scss";
+import "./ProcessSection.scss";
 
 import {
   FaUserCheck,

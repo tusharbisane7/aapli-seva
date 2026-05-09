@@ -1,4 +1,4 @@
-import "./testimonials.scss";
+import "./Testimonials.scss";
 
 import {
   useEffect,

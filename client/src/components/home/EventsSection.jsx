@@ -1,4 +1,4 @@
-import "./eventsSection.scss";
+import "./EventsSection.scss";
 
 import {
   useEffect,
