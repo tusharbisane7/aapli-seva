@@ -32,7 +32,7 @@ function MyApplications(){
       const res =
       await axios.get(
 
-        `http://localhost:5000/api/application/user/${user.id}`
+        `https://aapli-seva.onrender.com/api/application/user/${user.id}`
 
       );
 

@@ -166,7 +166,7 @@ function ApplicationForm(){
 
       const res = await axios.post(
 
-        "http://localhost:5000/api/application/create",
+        "https://aapli-seva.onrender.com/api/application/create",
 
         data,
 
@@ -197,7 +197,7 @@ function ApplicationForm(){
 
       const orderRes = await axios.post(
 
-        "http://localhost:5000/api/payment/create-order"
+        "https://aapli-seva.onrender.com/api/payment/create-order"
 
       );
 
@@ -250,7 +250,7 @@ function ApplicationForm(){
 
             await axios.post(
 
-              "http://localhost:5000/api/payment/verify-payment",
+              "https://aapli-seva.onrender.com/api/payment/verify-payment",
 
               {
 

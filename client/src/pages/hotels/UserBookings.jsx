@@ -45,7 +45,7 @@ function UserBookings(){
 
       const res = await axios.get(
 
-        `http://localhost:5000/api/bookings/user/${userId}`
+        `https://aapli-seva.onrender.com/api/bookings/user/${userId}`
 
       );
 

@@ -20,7 +20,7 @@ function PaymentPage(){
       const orderRes =
       await axios.post(
 
-        "http://localhost:5000/api/payment/create-order"
+        "https://aapli-seva.onrender.com/api/payment/create-order"
 
       );
 
@@ -74,7 +74,7 @@ function PaymentPage(){
             const verifyRes =
             await axios.post(
 
-              "http://localhost:5000/api/payment/verify-payment",
+              "https://aapli-seva.onrender.com/api/payment/verify-payment",
 
               {
 

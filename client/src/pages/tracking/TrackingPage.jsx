@@ -47,7 +47,7 @@ function TrackingPage(){
       const res =
       await axios.get(
 
-        `http://localhost:5000/api/application/user/${user?._id || user?.id}`
+        `https://aapli-seva.onrender.com/api/application/user/${user?._id || user?.id}`
 
       );
 
@@ -85,7 +85,7 @@ function TrackingPage(){
       const res =
       await axios.get(
 
-        `http://localhost:5000/api/application/track/${trackingId}`
+        `https://aapli-seva.onrender.com/api/application/track/${trackingId}`
 
       );
 
@@ -347,7 +347,7 @@ function TrackingPage(){
 
                     href={
 
-                      `http://localhost:5000/uploads/${searchedApplication.approvedDocument}`
+                      `https://aapli-seva.onrender.com/uploads/${searchedApplication.approvedDocument}`
 
                     }
 
@@ -528,7 +528,7 @@ function TrackingPage(){
 
                         href={
 
-                          `http://localhost:5000/uploads/${item.approvedDocument}`
+                          `https://aapli-seva.onrender.com/uploads/${item.approvedDocument}`
 
                         }
 

@@ -48,7 +48,7 @@ function TransportTicket() {
     try {
 
       const res = await axios.get(
-        `http://localhost:5000/api/transport-bookings/${id}`
+        `https://aapli-seva.onrender.com/api/transport-bookings/${id}`
       );
 
       if (

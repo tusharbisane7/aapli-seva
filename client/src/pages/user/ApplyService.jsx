@@ -116,7 +116,7 @@ function ApplyService() {
       const res =
       await axios.post(
 
-        "http://localhost:5000/api/application/create",
+        "https://aapli-seva.onrender.com/api/application/create",
 
         data,
 

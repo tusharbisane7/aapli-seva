@@ -39,7 +39,7 @@ function ExploreCity() {
 
       const res = await axios.get(
 
-        "http://localhost:5000/api/explore/all"
+        "https://aapli-seva.onrender.com/api/explore/all"
 
       );
 

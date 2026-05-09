@@ -66,7 +66,7 @@ function Navbar() {
 
       ? user.profilePic
 
-      : `http://localhost:5000/uploads/${user.profilePic}`
+      : `https://aapli-seva.onrender.com/${user.profilePic}`
 
     : "https://cdn-icons-png.flaticon.com/512/149/149071.png";
 

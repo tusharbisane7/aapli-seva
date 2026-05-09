@@ -115,7 +115,7 @@ function HotelBooking(){
 
       const res = await axios.post(
 
-        "http://localhost:5000/api/bookings/create",
+        "https://aapli-seva.onrender.com/api/bookings/create",
 
         data
 

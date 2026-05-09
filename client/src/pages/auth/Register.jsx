@@ -76,7 +76,7 @@ function Register() {
 
       const res = await axios.post(
 
-        "http://localhost:5000/api/otp/send-otp",
+        "https://aapli-seva.onrender.com/api/otp/send-otp",
 
         {
 
@@ -124,7 +124,7 @@ function Register() {
       const otpRes =
       await axios.post(
 
-        "http://localhost:5000/api/otp/verify-otp",
+        "https://aapli-seva.onrender.com/api/otp/verify-otp",
 
         {
 
@@ -140,7 +140,7 @@ function Register() {
 
         const res = await axios.post(
 
-          "http://localhost:5000/api/auth/register",
+          "https://aapli-seva.onrender.com/api/auth/register",
 
           formData
 

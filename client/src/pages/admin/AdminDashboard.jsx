@@ -82,35 +82,35 @@ function AdminDashboard() {
   /* ========================= FETCH FUNCTIONS ========================= */
   const fetchStats = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/auth/admin/stats");
+      const res = await axios.get("https://aapli-seva.onrender.com/api/auth/admin/stats");
       setStats(res.data);
     } catch (error) { console.log(error); }
   };
 
   const fetchApplications = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/application/all");
+      const res = await axios.get("https://aapli-seva.onrender.com/api/application/all");
       setApplications(Array.isArray(res.data) ? res.data : res.data.applications || []);
     } catch (error) { console.log(error); }
   };
 
   const fetchHotels = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/hotels/all");
+      const res = await axios.get("https://aapli-seva.onrender.com/api/hotels/all");
       setHotels(Array.isArray(res.data) ? res.data : res.data.hotels || []);
     } catch (error) { console.log(error); }
   };
 
   const fetchBookings = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/bookings/all");
+      const res = await axios.get("https://aapli-seva.onrender.com/api/bookings/all");
       setBookings(Array.isArray(res.data) ? res.data : res.data.bookings || []);
     } catch (error) { console.log(error); }
   };
 
   const fetchReviews = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/reviews");
+      const res = await axios.get("https://aapli-seva.onrender.com/api/reviews");
       setReviews(res.data.reviews || []);
     } catch (error) { console.log(error); }
   };
@@ -121,7 +121,7 @@ function AdminDashboard() {
 
     const res = await axios.get(
 
-      "http://localhost:5000/api/transport-bookings/all"
+      "https://aapli-seva.onrender.com/api/transport-bookings/all"
 
     );
 
@@ -151,28 +151,28 @@ function AdminDashboard() {
 
   const fetchBuses = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/transport/all");
+      const res = await axios.get("https://aapli-seva.onrender.com/api/transport/all");
       setAvailableBuses(res.data.buses || []);
     } catch (error) { console.log(error); }
   };
 
   const fetchEvents = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/events/all");
+      const res = await axios.get("https://aapli-seva.onrender.com/api/events/all");
       setEvents(res.data.events || []);
     } catch (error) { console.log(error); }
   };
 
   const fetchExplorePlaces = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/explore/all");
+      const res = await axios.get("https://aapli-seva.onrender.com/api/explore/all");
       setExplorePlaces(res.data.places || []);
     } catch (error) { console.log(error); }
   };
 
   const fetchTicker = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/ticker/latest");
+      const res = await axios.get("https://aapli-seva.onrender.com/api/ticker/latest");
       setTickerNews(res.data.news || "");
     } catch (error) { console.log(error); }
   };
@@ -238,7 +238,7 @@ const addHotel = async () => {
 
     await axios.post(
 
-      "http://localhost:5000/api/hotels/add",
+      "https://aapli-seva.onrender.com/api/hotels/add",
 
       payload
 
@@ -317,7 +317,7 @@ const updateHotel = async () => {
 
     await axios.put(
 
-      `http://localhost:5000/api/hotels/update/${editHotelId}`,
+      `https://aapli-seva.onrender.com/api/hotels/update/${editHotelId}`,
 
       payload
 
@@ -347,7 +347,7 @@ const deleteHotel = async (id) => {
 
     await axios.delete(
 
-      `http://localhost:5000/api/hotels/delete/${id}`
+      `https://aapli-seva.onrender.com/api/hotels/delete/${id}`
 
     );
 
@@ -472,10 +472,10 @@ const editHotel = (hotel) => {
     };
     try {
       if (editBusId) {
-        await axios.put(`http://localhost:5000/api/transport/update/${editBusId}`, payload);
+        await axios.put(`https://aapli-seva.onrender.com/api/transport/update/${editBusId}`, payload);
         alert("✅ Bus Updated!");
       } else {
-        await axios.post("http://localhost:5000/api/transport/add", payload);
+        await axios.post("https://aapli-seva.onrender.com/api/transport/add", payload);
         alert("✅ Bus Added!");
       }
       setEditBusId(null);
@@ -489,7 +489,7 @@ const editHotel = (hotel) => {
 
   const addEvent = async () => {
     try {
-      await axios.post("http://localhost:5000/api/events/add", eventForm);
+      await axios.post("https://aapli-seva.onrender.com/api/events/add", eventForm);
       alert("✅ Event Added!");
       fetchEvents();
       setEventForm({ title: "", location: "", date: "", time: "", thumbnail: "", description: "", image1: "", image2: "", image3: "", image4: "", image5: "", image6: "" });
@@ -502,14 +502,14 @@ const editHotel = (hotel) => {
   const deleteEvent = async (id) => {
     if (!window.confirm("Delete this event?")) return;
     try {
-      await axios.delete(`http://localhost:5000/api/events/delete/${id}`);
+      await axios.delete(`https://aapli-seva.onrender.com/api/events/delete/${id}`);
       fetchEvents();
     } catch (error) { console.log(error); }
   };
 
   const addExplorePlace = async () => {
     try {
-      await axios.post("http://localhost:5000/api/explore/add", exploreForm);
+      await axios.post("https://aapli-seva.onrender.com/api/explore/add", exploreForm);
       alert("✅ Place Added!");
       fetchExplorePlaces();
       setExploreForm({ title: "", location: "", rating: "", thumbnail: "", description: "", image1: "", image2: "", image3: "", image4: "", image5: "", image6: "" });
@@ -522,14 +522,14 @@ const editHotel = (hotel) => {
   const deleteExplorePlace = async (id) => {
     if (!window.confirm("Delete this place?")) return;
     try {
-      await axios.delete(`http://localhost:5000/api/explore/delete/${id}`);
+      await axios.delete(`https://aapli-seva.onrender.com/api/explore/delete/${id}`);
       fetchExplorePlaces();
     } catch (error) { console.log(error); }
   };
 
   const updateTicker = async () => {
     try {
-      await axios.put("http://localhost:5000/api/ticker/update", { news: tickerNews });
+      await axios.put("https://aapli-seva.onrender.com/api/ticker/update", { news: tickerNews });
       alert("✅ Ticker Updated!");
       fetchTicker();
     } catch (error) {
@@ -540,14 +540,14 @@ const editHotel = (hotel) => {
 
   const updateBookingStatus = async (id, status) => {
     try {
-      await axios.put(`http://localhost:5000/api/bookings/admin/update/${id}`, { bookingStatus: status });
+      await axios.put(`https://aapli-seva.onrender.com/api/bookings/admin/update/${id}`, { bookingStatus: status });
       fetchTransportBookings();
     } catch (error) { console.log(error); }
   };
 
   const deleteReview = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/reviews/delete/${id}`);
+      await axios.delete(`https://aapli-seva.onrender.com/api/reviews/delete/${id}`);
       fetchReviews();
     } catch (error) { console.log(error); }
   };
@@ -559,21 +559,21 @@ const editHotel = (hotel) => {
       data.append("remarks", remarks);
       data.append("approvedBy", `${user?.firstName} ${user?.lastName}`);
       if (file) data.append("approvedDocument", file);
-      await axios.put(`http://localhost:5000/api/application/admin/update/${trackingId}`, data);
+      await axios.put(`https://aapli-seva.onrender.com/api/application/admin/update/${trackingId}`, data);
       fetchApplications();
     } catch (error) { console.log(error); }
   };
 
   const deleteApplication = async (trackingId) => {
     try {
-      await axios.delete(`http://localhost:5000/api/application/delete/${trackingId}`);
+      await axios.delete(`https://aapli-seva.onrender.com/api/application/delete/${trackingId}`);
       fetchApplications();
     } catch (error) { console.log(error); }
   };
 
   const deleteTransport = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/transport/delete/${id}`);
+      await axios.delete(`https://aapli-seva.onrender.com/api/transport/delete/${id}`);
       fetchBuses();
     } catch (error) { console.log(error); }
   };
@@ -1605,7 +1605,7 @@ function ApplicationCard({
 
               key={index}
 
-              href={`http://localhost:5000/${doc}`}
+              href={`https://aapli-seva.onrender.com/${doc}`}
 
               target="_blank"
 

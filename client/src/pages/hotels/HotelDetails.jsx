@@ -66,7 +66,7 @@ function HotelDetails(){
 
       const res = await axios.get(
 
-        "http://localhost:5000/api/hotels/all"
+        "https://aapli-seva.onrender.com/api/hotels/all"
 
       );
 
@@ -98,7 +98,7 @@ function HotelDetails(){
 
       const res = await axios.get(
 
-        `http://localhost:5000/api/hotel-reviews/${id}`
+        `https://aapli-seva.onrender.com/api/hotel-reviews/${id}`
 
       );
 
@@ -134,7 +134,7 @@ function HotelDetails(){
 
       await axios.post(
 
-        "http://localhost:5000/api/hotel-reviews/add",
+        "https://aapli-seva.onrender.com/api/hotel-reviews/add",
 
         {
 
@@ -192,7 +192,7 @@ function HotelDetails(){
 
       await axios.delete(
 
-        `http://localhost:5000/api/hotel-reviews/delete/${reviewId}`
+        `https://aapli-seva.onrender.com/api/hotel-reviews/delete/${reviewId}`
 
       );
 

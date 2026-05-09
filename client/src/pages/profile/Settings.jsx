@@ -27,7 +27,7 @@ function Settings() {
 
     storedUser?.profilePic
 
-    ? `http://localhost:5000/uploads/${storedUser.profilePic}`
+    ? `https://aapli-seva.onrender.com/uploads/${storedUser.profilePic}`
 
     : "https://cdn-icons-png.flaticon.com/512/149/149071.png"
 
@@ -191,7 +191,7 @@ function Settings() {
       const res =
       await axios.put(
 
-        `http://localhost:5000/api/auth/update/${storedUser._id || storedUser.id}`,
+        `https://aapli-seva.onrender.com/api/auth/update/${storedUser._id || storedUser.id}`,
 
         form,
 

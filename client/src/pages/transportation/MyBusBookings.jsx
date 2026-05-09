@@ -47,7 +47,7 @@ function MyBusBookings(){
 
       const res = await axios.get(
 
-        "http://localhost:5000/api/transport-bookings/all"
+        "https://aapli-seva.onrender.com/api/transport-bookings/all"
 
       );
 
@@ -99,7 +99,7 @@ function MyBusBookings(){
 
       await axios.put(
 
-        `http://localhost:5000/api/transport-bookings/cancel/${id}`,
+        `https://aapli-seva.onrender.com/api/transport-bookings/cancel/${id}`,
 
         {
           cancelReason: reason

@@ -58,7 +58,7 @@ function PrivateTransport(){
 
       const res = await axios.get(
 
-        "http://localhost:5000/api/transport/all"
+        "https://aapli-seva.onrender.com//api/transport/all"
 
       );
 

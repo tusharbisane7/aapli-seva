@@ -88,7 +88,7 @@ function TransportBooking() {
 
       const res = await axios.get(
 
-        `http://localhost:5000/api/transport/${id}`
+        `https://aapli-seva.onrender.com/api/transport/${id}`
 
       );
 
@@ -416,7 +416,7 @@ function TransportBooking() {
 
       const res = await axios.post(
 
-        "http://localhost:5000/api/transport-bookings/book",
+        "https://aapli-seva.onrender.com/api/transport-bookings/book",
 
         payload
 

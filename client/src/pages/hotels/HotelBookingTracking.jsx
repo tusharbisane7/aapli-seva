@@ -48,7 +48,7 @@ function HotelBookingTracking(){
 
       const res = await axios.get(
 
-        `http://localhost:5000/api/bookings/track/${token}`
+        `https://aapli-seva.onrender.com/api/bookings/track/${token}`
 
       );
 

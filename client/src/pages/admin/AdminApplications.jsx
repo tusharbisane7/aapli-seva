@@ -32,7 +32,7 @@ function AdminApplications(){
       const res =
       await axios.get(
 
-        "http://localhost:5000/api/application/all"
+        "https://aapli-seva.onrender.com/api/application/all"
 
       );
 

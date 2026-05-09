@@ -140,7 +140,7 @@ function AddHotel(){
 
       await axios.post(
 
-        "http://localhost:5000/api/hotels/add",
+        "https://aapli-seva.onrender.com/api/hotels/add",
 
         payload
 

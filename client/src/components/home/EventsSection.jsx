@@ -38,7 +38,7 @@ function EventsSection() {
 
       const res = await axios.get(
 
-        "http://localhost:5000/api/events/all"
+        "https://aapli-seva.onrender.com/api/events/all"
 
       );
 

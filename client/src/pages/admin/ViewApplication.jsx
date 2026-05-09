@@ -49,7 +49,7 @@ function ViewApplication(){
       const res =
       await axios.get(
 
-        `http://localhost:5000/api/application/track/${trackingId}`
+        `https://aapli-seva.onrender.com/application/track/${trackingId}`
 
       );
 
@@ -85,7 +85,7 @@ function ViewApplication(){
 
   const docUrl = (file)=>{
 
-    return `http://localhost:5000/uploads/${file}`;
+    return `https://aapli-seva.onrender.com/uploads/${file}`;
 
   };
 

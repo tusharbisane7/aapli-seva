@@ -44,7 +44,7 @@ function Testimonials() {
 
       const res = await axios.get(
 
-        "http://localhost:5000/api/reviews"
+        "https://aapli-seva.onrender.com/api/reviews"
 
       );
 
@@ -111,7 +111,7 @@ function Testimonials() {
 
       await axios.post(
 
-        "http://localhost:5000/api/reviews/add",
+        "https://aapli-seva.onrender.com/api/reviews/add",
 
         {
 
